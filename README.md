@@ -1,6 +1,6 @@
-# 🌙🌸 nominal
+# 🌙🌸 annoying-nominal
 
-a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit
+a minimal, dark theme with a pop of color that hopes to improve the design - at least a little bit    
 
 ![preview](https://milkembers.github.io/nominal/assets/prev.png)
 
@@ -8,8 +8,7 @@ a minimal, dark theme with a pop of color that hopes to improve the design - at 
 
 - cute accent colours for checkboxes and selections
 - blurred context menus and backdrops
-- hides many annoyances like the nitro shop, avatar decorations and welcome stickers
-- ~~nitro colour theme friendly~~ (needs a little work after the 10/23 update, not likely to fix)
+- ~~hides many annoyances like the nitro shop, avatar decorations and welcome stickers~~
 
 ## install
 
@@ -21,7 +20,7 @@ a minimal, dark theme with a pop of color that hopes to improve the design - at 
 @import this link, or paste it in your themes tab > online themes:
 
 ```
-https://milkembers.github.io/nominal/nominal.min.css
+https://raw.githubusercontent.com/Milkshiift/annoying-nominal/main/nominal.min.css
 ```
 
 ### in-browser / web app
