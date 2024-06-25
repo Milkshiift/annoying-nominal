@@ -90,8 +90,8 @@ html.theme-light,
   --background-modifier-hover: var(--hover);
   --background-modifier-selected: var(--active);
   --brand-430: var(--accent-3);
-  --brand-500: var(--accent-3);
-  --brand-560: var(--accent-4);
+  --brand-500: var(--brand-experiment); /* accent-3 */
+  --brand-560: var(--brand-experiment-500); /* accent-4 */
   --brand-600: var(--accent-5);
   /* background of reacted reactions */
   --brand-experiment-15a: var(--mention);
@@ -190,12 +190,12 @@ html.theme-light,
 }
 
 /* moon i */
-.childWrapper_a6ce15>svg:not(.favoriteIcon_adf80e) {
+.childWrapper_f90abb>svg:not(.favoriteIcon_dcc7a4) {
   display: var(--default-icon);
 }
 
 /* moon ii */
-.childWrapper_a6ce15:has(> svg:not(.favoriteIcon_adf80e))::before {
+.childWrapper_f90abb:has(> svg:not(.favoriteIcon_dcc7a4))::before {
   content: '';
   display: var(--moon-icon);
   position: absolute;
@@ -203,22 +203,19 @@ html.theme-light,
   height: 65%;
   background: var(--text-4);
 	-webkit-mask-image: var(--moon-icon-url);
-  mask-image: var(--moon-icon-url);
 	-webkit-mask-size: var(--moon-icon-size);
-  mask-size: var(--moon-icon-size);
 	-webkit-mask-repeat: none;
-  mask-repeat: none;
 }
 
 /* moon iii */
-.wrapper__8436d:hover .childWrapper_a6ce15::before {
+.wrapper_f90abb:hover .childWrapper_f90abb::before {
   transition: background-color 0.15s ease-out, transform var(--moon-spin-transition);
   transform: rotate(0deg) scale(1);
 }
 
 /* moon iv */
-.wrapper__8436d:hover>.childWrapper_a6ce15::before,
-.wrapper__8436d.selected_ae80f7>.childWrapper_a6ce15::before {
+.wrapper_f90abb:hover>.childWrapper_f90abb::before,
+.wrapper_f90abb.selected_f90abb>.childWrapper_f90abb::before {
   background: var(--text-1);
   transform: rotate(-360deg) scale(0.8);
 }
@@ -251,9 +248,9 @@ svg[class^="slider"] path {
 }
 
 /* browse channels container, header, inner */
-#app-mount .container__03ec9,
-#app-mount .header__71942,
-#app-mount .container__6b2e5 {
+#app-mount .container_f1fd9c,
+#app-mount .header_f1fd9c,
+#app-mount .container_c2efea {
   background-color: var(--bg-1);
 }
 
@@ -271,13 +268,13 @@ svg[class^="slider"] path {
 }
 
 /* sidebar call, voice/video connected text */
-[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents__322f4"] {
+[class^="sidebar"] section[class^="panels"] [class^="labelWrapper"] [class*="contents"] {
   font-size: var(--roundness-l);
 }
 
 /* sidebar call, action buttons */
-[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="buttonIcon"] {
-  width: 18px !important;
+[class^="sidebar"] section[class^="panels"] [class^="actionButtons"] [class*="contents"] {
+  width: 18px;
 }
 
 /* backdrop blur */
